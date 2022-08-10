@@ -15,6 +15,7 @@ enum Operations {
 }
 
 class Calculator {
+	var isNeg : Bool = false
 	var number : Int = 0
 	var result : Int = 0
 	var displayDigits : String = "0"
@@ -33,9 +34,23 @@ class Calculator {
 	}
 
 	func inputNumber(num : Int) {
-		if !isOverflow(num: Double(number) * 10 + Double(num)) {
+		if !isOverflow(num: Double(number) * 10 + Double(num)) ||
+			(!isOverflow(num: Double(number) * 10 - Double(num)) && isNeg)
+		{
 			number *= 10
-			number += num
+			if !isNeg {
+				number += num
+			} else {
+				number -= num
+			}
+			displayDigits = String(number)
+		}
+	}
+
+	func negAction() {
+		isNeg = !isNeg
+		if !isOverflow(num: Double(-number)) && number != 0{
+			number = -number
 			displayDigits = String(number)
 		}
 	}
@@ -46,6 +61,7 @@ class Calculator {
 			result = 0
 			displayDigits = "ERROR: DIVISION BY ZERO"
 		} else {
+			isNeg = false
 			switch operation {
 				case .plus:
 					if !isOverflow(num: Double(result) + Double(number)) {

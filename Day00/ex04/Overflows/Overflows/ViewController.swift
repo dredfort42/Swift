@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func negButtonAction(_ sender: UIButton) {
-		clc.number *= -1
+		clc.negAction()
 		resetButtonView()
 	}
 
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
 		displayView.text = clc.displayDigits
 
 		for button in numberButtonView {
-			button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: .bold)
+			button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
 			button.titleLabel?.textColor = UIColor.black
 			button.backgroundColor = UIColor.lightGray
 			button.layer.cornerRadius = 5
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
 		}
 
 		for button in actionButtonView {
-			button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: .bold)
+			button.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
 			button.titleLabel?.textColor = UIColor.white
 			button.backgroundColor = UIColor.orange
 			button.layer.cornerRadius = 5
