@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  
+//
 //
 //  Created by Dmitry Novikov on 11.08.2022.
 //
@@ -64,6 +64,32 @@ print()
 print(Deck.allCards, " | ", Deck.allCards.count, " cards")
 print()
 
-var cardsPack = Deck.allCards
-cardsPack.shuffle()
-print(cardsPack, " | ", cardsPack.count, " cards shuffled")
+var allCards = Deck.allCards
+allCards.shuffle()
+print(allCards, " | ", allCards.count, " cards shuffled")
+
+
+var cardsPack = Deck(isShuffled: true)
+
+print(cardsPack)
+
+cardsPack = Deck(isShuffled: false)
+print()
+for _ in 0...12 {
+	print(cardsPack.draw() ?? card1)
+}
+
+print()
+print(cardsPack.outs)
+
+print()
+for _ in 0...5 {
+	cardsPack.fold(cardToFold: cardsPack.outs[0])
+}
+
+print()
+print(cardsPack.discards)
+print()
+print(cardsPack.outs)
+print()
+print(cardsPack.cards)

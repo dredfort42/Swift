@@ -14,3 +14,12 @@ class Deck : NSObject {
 	static let allClubs : [Card] = Value.allValues.map({Card(color: .clubs, value: $0)})
 	static let allCards : [Card] = allSpades + allDiamonds + allHearts + allClubs
 }
+
+
+extension Array {
+	mutating func shuffle() {
+		for i in 0 ..< self.count {
+			self.swapAt(Int(arc4random_uniform(self.count)), i)
+		}
+	}
+}
