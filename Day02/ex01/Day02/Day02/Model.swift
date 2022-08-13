@@ -9,8 +9,8 @@ import Foundation
 
 struct Data {
 	static var notes : [(String, String, String)] = [
-		("Rick", "15 October 2018 23:11:15", "Gunned down"),
-		("John", "21 October 2018 17:16:08", "Killed by luke"),
-		("Luke", "12 November 2018 12:00:43", "Executed")
+		("King", "13 June 2020", "clubs clubs clubs clubs"),
+		("Queen", "12 August 2021", "pikes pikes pikes pikes"),
+		("Jack", "30 January 2022", "diamonds diamonds diamonds diamonds")
 	]
 }

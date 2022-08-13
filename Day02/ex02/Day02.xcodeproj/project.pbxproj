@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AFE6CA3528A79BE70066A3B6 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = SOURCE_ROOT; };
+		AFE6CA3528A79BE70066A3B6 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNoteViewController.swift; path = Day02/AddNoteViewController.swift; sourceTree = SOURCE_ROOT; };
 		AFF3771E28A6DE2D00364F51 /* Day02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3772128A6DE2D00364F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF3772328A6DE2D00364F51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,10 +73,10 @@
 		AFF3772028A6DE2D00364F51 /* Day02 */ = {
 			isa = PBXGroup;
 			children = (
+				AFE6CA3528A79BE70066A3B6 /* AddNoteViewController.swift */,
 				AFF3773528A6E0EE00364F51 /* Model.swift */,
 				AFF3772528A6DE2D00364F51 /* NotesViewController.swift */,
 				AFF3773728A6E73B00364F51 /* NoteCellView.swift */,
-				AFE6CA3528A79BE70066A3B6 /* AddNoteViewController.swift */,
 				AFF3772728A6DE2D00364F51 /* Main.storyboard */,
 				AFF3772F28A6DE2F00364F51 /* Info.plist */,
 				AFE6CA3728A79C000066A3B6 /* Services */,

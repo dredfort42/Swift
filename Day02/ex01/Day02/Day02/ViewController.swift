@@ -35,9 +35,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell") as! NoteCellView
-		cell.nameLabel.text = Data.notes[indexPath.row].0
-		cell.dateLabel.text = Data.notes[indexPath.row].1
-		cell.listLabel.text = Data.notes[indexPath.row].2
+		cell.nameLabel.text = Data.notes[indexPath.section].0
+		cell.dateLabel.text = Data.notes[indexPath.section].1
+		cell.listLabel.text = Data.notes[indexPath.section].2
 		cell.layer.cornerRadius = 10
 
 		return cell
