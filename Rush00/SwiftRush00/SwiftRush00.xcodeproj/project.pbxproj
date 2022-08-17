@@ -14,6 +14,10 @@
 		AF215B7228AB9C8900E763DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF215B7128AB9C8900E763DF /* Assets.xcassets */; };
 		AF215B7528AB9C8900E763DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF215B7328AB9C8900E763DF /* LaunchScreen.storyboard */; };
 		AF215B7E28AB9D4200E763DF /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215B7D28AB9D4200E763DF /* OAuth.swift */; };
+		AF215B8428AC0E7400E763DF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215B8328AC0E7400E763DF /* MainView.swift */; };
+		AF215B8628AC131100E763DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF215B8528AC131100E763DF /* User.swift */; };
+		AF7C1BDC28AD63490002FFF4 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C1BDB28AD63490002FFF4 /* AgendaTableViewCell.swift */; };
+		AF7C1BDE28AD65280002FFF4 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C1BDD28AD65280002FFF4 /* Agenda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		AF215B7428AB9C8900E763DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF215B7628AB9C8900E763DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF215B7D28AB9D4200E763DF /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		AF215B8328AC0E7400E763DF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AF215B8528AC131100E763DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF7C1BDB28AD63490002FFF4 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		AF7C1BDD28AD65280002FFF4 /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				AF215B7D28AB9D4200E763DF /* OAuth.swift */,
+				AF215B8528AC131100E763DF /* User.swift */,
+				AF7C1BDD28AD65280002FFF4 /* Agenda.swift */,
 				AF215B6C28AB9C8300E763DF /* AuthorizationView.swift */,
+				AF215B8328AC0E7400E763DF /* MainView.swift */,
+				AF7C1BDB28AD63490002FFF4 /* AgendaTableViewCell.swift */,
 				AF215B6E28AB9C8300E763DF /* Main.storyboard */,
 				AF215B7628AB9C8900E763DF /* Info.plist */,
 				AF215B7C28AB9D0000E763DF /* Service */,
@@ -151,8 +163,12 @@
 			files = (
 				AF215B6D28AB9C8300E763DF /* AuthorizationView.swift in Sources */,
 				AF215B6928AB9C8300E763DF /* AppDelegate.swift in Sources */,
+				AF215B8628AC131100E763DF /* User.swift in Sources */,
 				AF215B6B28AB9C8300E763DF /* SceneDelegate.swift in Sources */,
+				AF215B8428AC0E7400E763DF /* MainView.swift in Sources */,
 				AF215B7E28AB9D4200E763DF /* OAuth.swift in Sources */,
+				AF7C1BDC28AD63490002FFF4 /* AgendaTableViewCell.swift in Sources */,
+				AF7C1BDE28AD65280002FFF4 /* Agenda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
