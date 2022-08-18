@@ -43,9 +43,9 @@ class PlacesMapViewController: UIViewController, MKMapViewDelegate, CLLocationMa
 		updateTrackingButtonViev()
 	}
 
-//	@IBAction func unwindToPlacesMapViewController(_ segue: UIStoryboardSegue) {
-//		print("back in MainViewController")
-//	}
+	@IBAction func unwindToPlacesMapViewController(_ segue: UIStoryboardSegue) {
+		showPlace(coordinate: placeToShow.coordinate)
+	}
 
 	override func viewDidLoad() {
         super.viewDidLoad()

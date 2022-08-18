@@ -37,6 +37,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Er6-fh-2Ya" kind="unwind" identifier="showOnMap" unwindAction="unwindToPlacesMapViewController:" id="Qq1-VX-pS6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -122,6 +125,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkN-7T-kJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Er6-fh-2Ya" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="651" y="-376"/>
         </scene>

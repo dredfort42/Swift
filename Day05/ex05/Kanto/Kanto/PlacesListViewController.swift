@@ -32,11 +32,14 @@ class PlacesListViewController: UIViewController, UITableViewDelegate, UITableVi
 	}
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//		performSegue(withIdentifier: "showOnMap", sender: self)
-//		self.tabBarController?.selectedIndex = 0
-		
+		performSegue(withIdentifier: "showOnMap", sender: self)
+	}
 
-		print(PlacesList.places[indexPath.row].subtitle)
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if  let indexPath = placesListView.indexPathForSelectedRow {
+			let destinationView = segue.destination as! PlacesMapViewController
+			destinationView.placeToShow = PlacesList.places[indexPath.row]
+		}
 	}
 
 }
