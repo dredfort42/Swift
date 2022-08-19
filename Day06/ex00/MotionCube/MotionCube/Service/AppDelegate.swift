@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Day03
+//  MotionCube
 //
-//  Created by Dmitry Novikov on 14.08.2022.
+//  Created by Dmitry Novikov on 19.08.2022.
 //
 
 import UIKit
