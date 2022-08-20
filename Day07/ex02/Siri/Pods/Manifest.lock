@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ObjectMapper (3.4.2)
+  - RecastAI (3.5.0):
+    - Alamofire
+    - ObjectMapper
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - ObjectMapper (~> 3.4.2)
+  - RecastAI (~> 3.5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ObjectMapper
+    - RecastAI
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  RecastAI: d9abaf97f914a07cc10ee0cb8be89bfe2b942280
+
+PODFILE CHECKSUM: 56c5fdb9919d27b4041da1cb7fa4fd9cc5b45171
+
+COCOAPODS: 1.11.3
