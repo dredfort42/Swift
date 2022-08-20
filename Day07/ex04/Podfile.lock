@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ForecastIO (8.0.0)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - ObjectMapper (3.4.2)
+  - RecastAI (3.5.0):
+    - Alamofire
+    - ObjectMapper
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - ForecastIO
+  - JSQMessagesViewController
+  - ObjectMapper (~> 3.4.2)
+  - RecastAI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ForecastIO
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
+    - ObjectMapper
+    - RecastAI
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ForecastIO: 68f8231be20748446036263a438cc449886a65ca
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  RecastAI: d9abaf97f914a07cc10ee0cb8be89bfe2b942280
+
+PODFILE CHECKSUM: 42586849ccb48d014c5e25cca527a09ee9620487
+
+COCOAPODS: 1.11.3

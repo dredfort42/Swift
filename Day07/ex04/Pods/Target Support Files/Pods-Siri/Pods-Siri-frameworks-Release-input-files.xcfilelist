@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Siri/Pods-Siri-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ForecastIO/ForecastIO.framework
+${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework
+${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/RecastAI/RecastAI.framework
