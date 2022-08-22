@@ -1,0 +1,6 @@
+framework module Pods_dredfort2022_Tests {
+  umbrella header "Pods-dredfort2022_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
