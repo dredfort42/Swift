@@ -1,0 +1,6 @@
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Разрешить использование камеры";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Разрешить использование биометрической идентификации";
+

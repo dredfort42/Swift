@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'dredfort2022_Example' do
+  pod 'dredfort2022', :path => '../'
+
+  target 'dredfort2022_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - dredfort2022 (0.5.0)
+
+DEPENDENCIES:
+  - dredfort2022 (~> 0.5.0)
+
+SPEC REPOS:
+  trunk:
+    - dredfort2022
+
+SPEC CHECKSUMS:
+  dredfort2022: 6c58c74f04cbbb56d0440c4439cf8ac2691c310e
+
+PODFILE CHECKSUM: caf0759fc0fc6ceacf41a3cef4144f13da249198
+
+COCOAPODS: 1.11.3

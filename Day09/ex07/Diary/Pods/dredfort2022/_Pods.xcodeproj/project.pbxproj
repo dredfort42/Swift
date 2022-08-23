@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420ED8F191C4CC5B71FC5F5AC6DD2AFB /* dredfort2022-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C03F5AAAC317BAA8D9CED0E7E8BBA18B /* dredfort2022-dummy.m */; };
+		5CA8751C841B83B7FA54F37CFDDF44E4 /* Pods-dredfort2022_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF6FE96F04BDF332F7F1FB301CC607 /* Pods-dredfort2022_Example-dummy.m */; };
+		751A85D01722228DD130129F2C0FC559 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7D3800259AE168AF2C7E3DC975417A51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		836254F872AF1AE94E77D3C1BC068A81 /* Pods-dredfort2022_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80648F4B84882F79F97B273C60EA3255 /* Pods-dredfort2022_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985F2033916E34A363792A4981952C57 /* Pods-dredfort2022_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 843D7040B68C9B21584A56BE5D698C26 /* Pods-dredfort2022_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A81BE751E34FDF04F8F8BB515AB84F33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AD4844727144539AC815FED229D01C89 /* dredfort2022-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C6AC1F2D5AF4F7E0FDF54BCA8F252F /* dredfort2022-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE0E5CE439C071AF31E0D995903FFCEE /* Pods-dredfort2022_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC76DD4D968B5626D342ACB18E1520 /* Pods-dredfort2022_Tests-dummy.m */; };
+		C0A278E838112515E79AB0B02623CE75 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BE2A34EEAAA27778B113FEA4931D6 /* ReplaceMe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D11DEC3A2D6BC4739937761284945A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 477A2ECD96596BAEB7E6D625A714D1B3;
+			remoteInfo = dredfort2022;
+		};
+		DF815477B4CEDC782ACE1CA5C40BEF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C8BDD3A4444539CEBAC97FDD93C0C12;
+			remoteInfo = "Pods-dredfort2022_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		077BE2A34EEAAA27778B113FEA4931D6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = dredfort2022/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0FFF6FE96F04BDF332F7F1FB301CC607 /* Pods-dredfort2022_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dredfort2022_Example-dummy.m"; sourceTree = "<group>"; };
+		10F065564EBF4586A7548704FC807B52 /* dredfort2022.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dredfort2022.release.xcconfig; sourceTree = "<group>"; };
+		17AADBA8E4796E547D78344A7DBBE3BF /* dredfort2022 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = dredfort2022; path = dredfort2022.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF8D3BAD790AF8716D87E7965F560ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		22EB5036228DA5DF273D2EFD2059F777 /* Pods-dredfort2022_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dredfort2022_Example.modulemap"; sourceTree = "<group>"; };
+		355AA054AA2882FEEEF4EE20B78B1A52 /* Pods-dredfort2022_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dredfort2022_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BD730C98F56A9FFF821DFA7FCBF0385 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3E9133BF5847F12122A97C7649B1A4F9 /* Pods-dredfort2022_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dredfort2022_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		442EEED3B33A532242C128BCD532732E /* Pods-dredfort2022_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dredfort2022_Tests"; path = Pods_dredfort2022_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47287E889EAD6DA3D6B2008166AD136D /* dredfort2022-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "dredfort2022-prefix.pch"; sourceTree = "<group>"; };
+		52C6AC1F2D5AF4F7E0FDF54BCA8F252F /* dredfort2022-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "dredfort2022-umbrella.h"; sourceTree = "<group>"; };
+		571E3B26CEAAFECDD876E9E4A555D6A6 /* Pods-dredfort2022_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dredfort2022_Tests-Info.plist"; sourceTree = "<group>"; };
+		596B7D31BCD47FFDCDF248DFE5344C62 /* Pods-dredfort2022_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-dredfort2022_Example"; path = Pods_dredfort2022_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605DFC9A59C007C365A80564BC6E03BD /* Pods-dredfort2022_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dredfort2022_Example-frameworks.sh"; sourceTree = "<group>"; };
+		61240C1B9CCE9DD0258DC73792ACB714 /* dredfort2022.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = dredfort2022.modulemap; sourceTree = "<group>"; };
+		63E0814BB9B1998C2ACC6F608DA2E312 /* Pods-dredfort2022_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dredfort2022_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		80648F4B84882F79F97B273C60EA3255 /* Pods-dredfort2022_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dredfort2022_Example-umbrella.h"; sourceTree = "<group>"; };
+		843D7040B68C9B21584A56BE5D698C26 /* Pods-dredfort2022_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-dredfort2022_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8A08C80D218067A455B6ECB84FEA9A8B /* dredfort2022-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "dredfort2022-Info.plist"; sourceTree = "<group>"; };
+		8A30261CBD692B0B651D70F7A9BE7FB7 /* Pods-dredfort2022_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dredfort2022_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A70BD65165500FFF959F358F18EB57D9 /* Pods-dredfort2022_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dredfort2022_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFFD2035704ACAE252E9C6D5D0D911AD /* Pods-dredfort2022_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dredfort2022_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C03F5AAAC317BAA8D9CED0E7E8BBA18B /* dredfort2022-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "dredfort2022-dummy.m"; sourceTree = "<group>"; };
+		C3039D342107B2DBBC061A67210EDEF4 /* dredfort2022.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dredfort2022.debug.xcconfig; sourceTree = "<group>"; };
+		C8CD09A3F062A81AA6E4FE827896EE60 /* Pods-dredfort2022_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dredfort2022_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1EDBA73205E358552BE96CB99DD138F /* dredfort2022.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = dredfort2022.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D3E667D1F5D3D1E623FEE80DFB7E2210 /* Pods-dredfort2022_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dredfort2022_Example-Info.plist"; sourceTree = "<group>"; };
+		DC545FB224C0B511BDB36A1886FA5C5C /* Pods-dredfort2022_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-dredfort2022_Tests.modulemap"; sourceTree = "<group>"; };
+		EABC76DD4D968B5626D342ACB18E1520 /* Pods-dredfort2022_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dredfort2022_Tests-dummy.m"; sourceTree = "<group>"; };
+		F894DA6E5F05CD8972CFCDC24F02982F /* Pods-dredfort2022_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dredfort2022_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D28F4F18EBEBB8AC67514EA30CB6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81BE751E34FDF04F8F8BB515AB84F33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892C8552D07E22E832F28CFB0286BC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751A85D01722228DD130129F2C0FC559 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9039049BC17C1806839E2A9DA9E7470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3800259AE168AF2C7E3DC975417A51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F2B6ADAD7CFC1F1DE7E37B54FD3C1D /* Pods-dredfort2022_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC545FB224C0B511BDB36A1886FA5C5C /* Pods-dredfort2022_Tests.modulemap */,
+				BFFD2035704ACAE252E9C6D5D0D911AD /* Pods-dredfort2022_Tests-acknowledgements.markdown */,
+				F894DA6E5F05CD8972CFCDC24F02982F /* Pods-dredfort2022_Tests-acknowledgements.plist */,
+				EABC76DD4D968B5626D342ACB18E1520 /* Pods-dredfort2022_Tests-dummy.m */,
+				571E3B26CEAAFECDD876E9E4A555D6A6 /* Pods-dredfort2022_Tests-Info.plist */,
+				843D7040B68C9B21584A56BE5D698C26 /* Pods-dredfort2022_Tests-umbrella.h */,
+				355AA054AA2882FEEEF4EE20B78B1A52 /* Pods-dredfort2022_Tests.debug.xcconfig */,
+				63E0814BB9B1998C2ACC6F608DA2E312 /* Pods-dredfort2022_Tests.release.xcconfig */,
+			);
+			name = "Pods-dredfort2022_Tests";
+			path = "Target Support Files/Pods-dredfort2022_Tests";
+			sourceTree = "<group>";
+		};
+		4E394C1A6ED69B97AF6EB0014D0360CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61240C1B9CCE9DD0258DC73792ACB714 /* dredfort2022.modulemap */,
+				C03F5AAAC317BAA8D9CED0E7E8BBA18B /* dredfort2022-dummy.m */,
+				8A08C80D218067A455B6ECB84FEA9A8B /* dredfort2022-Info.plist */,
+				47287E889EAD6DA3D6B2008166AD136D /* dredfort2022-prefix.pch */,
+				52C6AC1F2D5AF4F7E0FDF54BCA8F252F /* dredfort2022-umbrella.h */,
+				C3039D342107B2DBBC061A67210EDEF4 /* dredfort2022.debug.xcconfig */,
+				10F065564EBF4586A7548704FC807B52 /* dredfort2022.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/dredfort2022";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		635008233FBAD6BD616AB85FC609E96D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C519F2B09D00A4F46F8C92D292E07E0A /* Pods-dredfort2022_Example */,
+				33F2B6ADAD7CFC1F1DE7E37B54FD3C1D /* Pods-dredfort2022_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70DB1CA4374B9F637056D48D9D018397 /* dredfort2022 */ = {
+			isa = PBXGroup;
+			children = (
+				077BE2A34EEAAA27778B113FEA4931D6 /* ReplaceMe.swift */,
+				A557C244D7A5E376E717DF787057AA80 /* Pod */,
+				4E394C1A6ED69B97AF6EB0014D0360CC /* Support Files */,
+			);
+			name = dredfort2022;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A557C244D7A5E376E717DF787057AA80 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D1EDBA73205E358552BE96CB99DD138F /* dredfort2022.podspec */,
+				1CF8D3BAD790AF8716D87E7965F560ED /* LICENSE */,
+				3BD730C98F56A9FFF821DFA7FCBF0385 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AD67BA76B59FF233089D061F4EEF84BB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DB1CA4374B9F637056D48D9D018397 /* dredfort2022 */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C519F2B09D00A4F46F8C92D292E07E0A /* Pods-dredfort2022_Example */ = {
+			isa = PBXGroup;
+			children = (
+				22EB5036228DA5DF273D2EFD2059F777 /* Pods-dredfort2022_Example.modulemap */,
+				C8CD09A3F062A81AA6E4FE827896EE60 /* Pods-dredfort2022_Example-acknowledgements.markdown */,
+				A70BD65165500FFF959F358F18EB57D9 /* Pods-dredfort2022_Example-acknowledgements.plist */,
+				0FFF6FE96F04BDF332F7F1FB301CC607 /* Pods-dredfort2022_Example-dummy.m */,
+				605DFC9A59C007C365A80564BC6E03BD /* Pods-dredfort2022_Example-frameworks.sh */,
+				D3E667D1F5D3D1E623FEE80DFB7E2210 /* Pods-dredfort2022_Example-Info.plist */,
+				80648F4B84882F79F97B273C60EA3255 /* Pods-dredfort2022_Example-umbrella.h */,
+				3E9133BF5847F12122A97C7649B1A4F9 /* Pods-dredfort2022_Example.debug.xcconfig */,
+				8A30261CBD692B0B651D70F7A9BE7FB7 /* Pods-dredfort2022_Example.release.xcconfig */,
+			);
+			name = "Pods-dredfort2022_Example";
+			path = "Target Support Files/Pods-dredfort2022_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AD67BA76B59FF233089D061F4EEF84BB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FE6DC2C40A0E26D84E7D9076DBC36C9F /* Products */,
+				635008233FBAD6BD616AB85FC609E96D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE6DC2C40A0E26D84E7D9076DBC36C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17AADBA8E4796E547D78344A7DBBE3BF /* dredfort2022 */,
+				596B7D31BCD47FFDCDF248DFE5344C62 /* Pods-dredfort2022_Example */,
+				442EEED3B33A532242C128BCD532732E /* Pods-dredfort2022_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5963B8C8B8F11C0AAADDB3D303BD71F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985F2033916E34A363792A4981952C57 /* Pods-dredfort2022_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE5E96959BD04A97E59D0DC02C0793F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4844727144539AC815FED229D01C89 /* dredfort2022-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90530865684868EBBF2664F8FA877727 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836254F872AF1AE94E77D3C1BC068A81 /* Pods-dredfort2022_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		477A2ECD96596BAEB7E6D625A714D1B3 /* dredfort2022 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4311B9F35FF36599C2D60269B929EEEE /* Build configuration list for PBXNativeTarget "dredfort2022" */;
+			buildPhases = (
+				6CE5E96959BD04A97E59D0DC02C0793F /* Headers */,
+				45480EFC17D51262DAF3D90D399BA242 /* Sources */,
+				30D28F4F18EBEBB8AC67514EA30CB6A9 /* Frameworks */,
+				A8CC0229B9AB1ED534E077BDE09A2E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dredfort2022;
+			productName = dredfort2022;
+			productReference = 17AADBA8E4796E547D78344A7DBBE3BF /* dredfort2022 */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C8BDD3A4444539CEBAC97FDD93C0C12 /* Pods-dredfort2022_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99AACA2698E7999467EC78F61DDF60A4 /* Build configuration list for PBXNativeTarget "Pods-dredfort2022_Example" */;
+			buildPhases = (
+				90530865684868EBBF2664F8FA877727 /* Headers */,
+				9919054F81EF0BBDE20C51910689BE31 /* Sources */,
+				892C8552D07E22E832F28CFB0286BC20 /* Frameworks */,
+				73583B8B639D1A65E8BABD353CC8C2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0E198717A9279089CE7DC78B1ED472 /* PBXTargetDependency */,
+			);
+			name = "Pods-dredfort2022_Example";
+			productName = Pods_dredfort2022_Example;
+			productReference = 596B7D31BCD47FFDCDF248DFE5344C62 /* Pods-dredfort2022_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD26D80706546091A9EBBBDB64D6B1B3 /* Pods-dredfort2022_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322A8917C976B12D6D90223FCEA2B215 /* Build configuration list for PBXNativeTarget "Pods-dredfort2022_Tests" */;
+			buildPhases = (
+				5963B8C8B8F11C0AAADDB3D303BD71F9 /* Headers */,
+				FD7EF70064E2EBA27FCB888B7E38EF52 /* Sources */,
+				F9039049BC17C1806839E2A9DA9E7470 /* Frameworks */,
+				D57B9667ED8065B2E7FEB28FA8E1869E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1CEB01E6E27A558C6F3B32E35ABE9E /* PBXTargetDependency */,
+			);
+			name = "Pods-dredfort2022_Tests";
+			productName = Pods_dredfort2022_Tests;
+			productReference = 442EEED3B33A532242C128BCD532732E /* Pods-dredfort2022_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FE6DC2C40A0E26D84E7D9076DBC36C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				477A2ECD96596BAEB7E6D625A714D1B3 /* dredfort2022 */,
+				8C8BDD3A4444539CEBAC97FDD93C0C12 /* Pods-dredfort2022_Example */,
+				AD26D80706546091A9EBBBDB64D6B1B3 /* Pods-dredfort2022_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73583B8B639D1A65E8BABD353CC8C2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CC0229B9AB1ED534E077BDE09A2E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D57B9667ED8065B2E7FEB28FA8E1869E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45480EFC17D51262DAF3D90D399BA242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420ED8F191C4CC5B71FC5F5AC6DD2AFB /* dredfort2022-dummy.m in Sources */,
+				C0A278E838112515E79AB0B02623CE75 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919054F81EF0BBDE20C51910689BE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA8751C841B83B7FA54F37CFDDF44E4 /* Pods-dredfort2022_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7EF70064E2EBA27FCB888B7E38EF52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0E5CE439C071AF31E0D995903FFCEE /* Pods-dredfort2022_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C1CEB01E6E27A558C6F3B32E35ABE9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-dredfort2022_Example";
+			target = 8C8BDD3A4444539CEBAC97FDD93C0C12 /* Pods-dredfort2022_Example */;
+			targetProxy = DF815477B4CEDC782ACE1CA5C40BEF88 /* PBXContainerItemProxy */;
+		};
+		8A0E198717A9279089CE7DC78B1ED472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dredfort2022;
+			target = 477A2ECD96596BAEB7E6D625A714D1B3 /* dredfort2022 */;
+			targetProxy = D11DEC3A2D6BC4739937761284945A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03BE85FC0B1D1249ED447AAF5AC937BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355AA054AA2882FEEEF4EE20B78B1A52 /* Pods-dredfort2022_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dredfort2022_Tests/Pods-dredfort2022_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dredfort2022_Tests/Pods-dredfort2022_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E6180AA4F587F2396D8782F166E7FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E0814BB9B1998C2ACC6F608DA2E312 /* Pods-dredfort2022_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dredfort2022_Tests/Pods-dredfort2022_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dredfort2022_Tests/Pods-dredfort2022_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63F0B3669DFB6D7DA5968A0F3E7A130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3039D342107B2DBBC061A67210EDEF4 /* dredfort2022.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/dredfort2022/dredfort2022-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/dredfort2022/dredfort2022-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/dredfort2022/dredfort2022.modulemap";
+				PRODUCT_MODULE_NAME = dredfort2022;
+				PRODUCT_NAME = dredfort2022;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77399F4BCEA76D654CE4CFFF4572D807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9133BF5847F12122A97C7649B1A4F9 /* Pods-dredfort2022_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dredfort2022_Example/Pods-dredfort2022_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dredfort2022_Example/Pods-dredfort2022_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BDAB290B7F5F67F60F5FB325A700C2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A30261CBD692B0B651D70F7A9BE7FB7 /* Pods-dredfort2022_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-dredfort2022_Example/Pods-dredfort2022_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-dredfort2022_Example/Pods-dredfort2022_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC58CB7F07F791F2625615C62D18C3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F065564EBF4586A7548704FC807B52 /* dredfort2022.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/dredfort2022/dredfort2022-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/dredfort2022/dredfort2022-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/dredfort2022/dredfort2022.modulemap";
+				PRODUCT_MODULE_NAME = dredfort2022;
+				PRODUCT_NAME = dredfort2022;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		322A8917C976B12D6D90223FCEA2B215 /* Build configuration list for PBXNativeTarget "Pods-dredfort2022_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BE85FC0B1D1249ED447AAF5AC937BB /* Debug */,
+				5E6180AA4F587F2396D8782F166E7FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4311B9F35FF36599C2D60269B929EEEE /* Build configuration list for PBXNativeTarget "dredfort2022" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F0B3669DFB6D7DA5968A0F3E7A130C /* Debug */,
+				CC58CB7F07F791F2625615C62D18C3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99AACA2698E7999467EC78F61DDF60A4 /* Build configuration list for PBXNativeTarget "Pods-dredfort2022_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77399F4BCEA76D654CE4CFFF4572D807 /* Debug */,
+				BDAB290B7F5F67F60F5FB325A700C2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+/* Bundle name */
+"CFBundleName" = "Diary";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "";
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "";

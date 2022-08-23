@@ -1,0 +1,45 @@
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "1H4-jT-yMB"; */
+"1H4-jT-yMB.title" = "Выйти";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "5Ic-jW-wJD"; */
+"5Ic-jW-wJD.text" = "Контент";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "7jW-NJ-JNg"; */
+"7jW-NJ-JNg.configuration.title" = "Войти";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7jW-NJ-JNg"; */
+"7jW-NJ-JNg.normalTitle" = "Кнопки";
+
+/* Class = "UILabel"; text = "Creation date"; ObjectID = "Bp2-ta-z98"; */
+"Bp2-ta-z98.text" = "Дата создания";
+
+/* Class = "UINavigationItem"; title = "Diary"; ObjectID = "dzK-hC-pgH"; */
+"dzK-hC-pgH.title" = "Дневник";
+
+/* Class = "UILabel"; text = "Enter your password"; ObjectID = "fKS-zR-oFB"; */
+"fKS-zR-oFB.text" = "Введите пароль";
+
+/* Class = "UITextField"; placeholder = "Enter the title of the article"; ObjectID = "NCX-jX-vmD"; */
+"NCX-jX-vmD.placeholder" = "Введите название статьи";
+
+/* Class = "UIButton"; configuration.title = "Choose picture "; ObjectID = "PPw-02-thn"; */
+"PPw-02-thn.configuration.title" = "Выберите изображение";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PPw-02-thn"; */
+"PPw-02-thn.normalTitle" = "Кнопка";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "pr3-zU-u7v"; */
+"pr3-zU-u7v.placeholder" = "Пароль";
+
+/* Class = "UINavigationItem"; title = "Article"; ObjectID = "qAG-Op-pb7"; */
+"qAG-Op-pb7.title" = "Статья";
+
+/* Class = "UIButton"; configuration.title = "Take picture"; ObjectID = "vfh-l0-LGV"; */
+"vfh-l0-LGV.configuration.title" = "Сделать снимок";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vfh-l0-LGV"; */
+"vfh-l0-LGV.normalTitle" = "Кнопка";
+
+/* Class = "UILabel"; text = "Modification date"; ObjectID = "xVG-Ej-c6B"; */
+"xVG-Ej-c6B.text" = "Дата изменения";
+
