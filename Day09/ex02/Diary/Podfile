@@ -6,6 +6,6 @@ target 'Diary' do
   use_frameworks!
 
   # Pods for Diary
-  pod 'dredfort2022'
+  pod 'dredfort2022', '~> 0.5.0'
 
 end

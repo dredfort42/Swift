@@ -22,7 +22,10 @@ public class ArticleManager: NSObject {
 	}()
 
 	private var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
-		guard let modelURL = Bundle.main.url(forResource: "article", withExtension:"momd") else {
+		guard let modelURL = Bundle(for: dredfort2022.Article.self).url(
+			forResource: "article",
+			withExtension:"momd"
+		) else {
 			fatalError("Error loading model from bundle")
 		}
 		guard let mom = NSManagedObjectModel(contentsOf: modelURL) else {

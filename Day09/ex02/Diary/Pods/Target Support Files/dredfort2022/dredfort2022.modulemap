@@ -1,6 +1,0 @@
-framework module dredfort2022 {
-  umbrella header "dredfort2022-umbrella.h"
-
-  export *
-  module * { export * }
-}

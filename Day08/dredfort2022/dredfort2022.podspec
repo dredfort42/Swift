@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'dredfort2022'
-  s.version          = '0.4.2'
+  s.version          = '0.5.0'
   s.summary          = '42 Piscine iOS Swift - Day 08 pod dredfort2022.'
 
 # This description is used to generate tags and improve search results.

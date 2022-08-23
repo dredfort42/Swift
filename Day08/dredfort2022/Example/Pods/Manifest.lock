@@ -1,5 +1,5 @@
 PODS:
-  - dredfort2022 (0.4.2)
+  - dredfort2022 (0.1.0)
 
 DEPENDENCIES:
   - dredfort2022 (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  dredfort2022: 4e3d29e892bb6baa3c19151fdecf039c4351953f
+  dredfort2022: 571f7a2189e79af81ad217787f2737419c632778
 
-PODFILE CHECKSUM: 92a779ad1b02d7834dc7729484c2e0370bdb48bd
+PODFILE CHECKSUM: d911316c71ce0ecb1f2b112ae9c4f23e24c2ab05
 
 COCOAPODS: 1.11.3

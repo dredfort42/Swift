@@ -13,7 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		AFF228DE28B2704C00DFE5FE /* article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFF228DC28B2704C00DFE5FE /* article.xcdatamodeld */; };
 		EAECF9345CBDCF85F9CD7B5E /* Pods_dredfort2022_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E95918118C140CFA43AFC77 /* Pods_dredfort2022_Example.framework */; };
 		EB9226EAF21DE198BCB6D6D7 /* Pods_dredfort2022_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C62AF5104CE1ECA9F39CACF /* Pods_dredfort2022_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9E95918118C140CFA43AFC77 /* Pods_dredfort2022_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dredfort2022_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF228DD28B2704C00DFE5FE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F7F0124D6D1F6CACB622B9F5 /* Pods-dredfort2022_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dredfort2022_Tests.release.xcconfig"; path = "Target Support Files/Pods-dredfort2022_Tests/Pods-dredfort2022_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +83,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				AFF228DC28B2704C00DFE5FE /* article.xcdatamodeld */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for dredfort2022 */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -338,7 +335,6 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				AFF228DE28B2704C00DFE5FE /* article.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,20 +580,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AFF228DC28B2704C00DFE5FE /* article.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AFF228DD28B2704C00DFE5FE /* Model.xcdatamodel */,
-			);
-			currentVersion = AFF228DD28B2704C00DFE5FE /* Model.xcdatamodel */;
-			name = article.xcdatamodeld;
-			path = ../article.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

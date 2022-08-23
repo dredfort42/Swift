@@ -14,6 +14,8 @@
 		AF96204028B3BB6600787DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96203E28B3BB6600787DA0 /* Main.storyboard */; };
 		AF96204228B3BB6900787DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF96204128B3BB6900787DA0 /* Assets.xcassets */; };
 		AF96204528B3BB6900787DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96204328B3BB6900787DA0 /* LaunchScreen.storyboard */; };
+		AF96204D28B4961500787DA0 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96204C28B4961500787DA0 /* DiaryViewController.swift */; };
+		AF96205028B49DDB00787DA0 /* ArticleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96204F28B49DDB00787DA0 /* ArticleViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		AF96204128B3BB6900787DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF96204428B3BB6900787DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF96204628B3BB6900787DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF96204C28B4961500787DA0 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		AF96204F28B49DDB00787DA0 /* ArticleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewCell.swift; sourceTree = "<group>"; };
 		EBCE5256ACEDE0BDA8057D4B /* Pods-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.release.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,15 +84,25 @@
 		AF96203728B3BB6600787DA0 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				AF96203828B3BB6600787DA0 /* AppDelegate.swift */,
-				AF96203A28B3BB6600787DA0 /* SceneDelegate.swift */,
 				AF96203C28B3BB6600787DA0 /* AuthenticationViewController.swift */,
+				AF96204C28B4961500787DA0 /* DiaryViewController.swift */,
 				AF96203E28B3BB6600787DA0 /* Main.storyboard */,
-				AF96204128B3BB6900787DA0 /* Assets.xcassets */,
-				AF96204328B3BB6900787DA0 /* LaunchScreen.storyboard */,
+				AF96204F28B49DDB00787DA0 /* ArticleViewCell.swift */,
 				AF96204628B3BB6900787DA0 /* Info.plist */,
+				AF96204E28B4962100787DA0 /* Supporting files */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		AF96204E28B4962100787DA0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AF96203828B3BB6600787DA0 /* AppDelegate.swift */,
+				AF96203A28B3BB6600787DA0 /* SceneDelegate.swift */,
+				AF96204128B3BB6900787DA0 /* Assets.xcassets */,
+				AF96204328B3BB6900787DA0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +116,6 @@
 				AF96203128B3BB6600787DA0 /* Sources */,
 				AF96203228B3BB6600787DA0 /* Frameworks */,
 				AF96203328B3BB6600787DA0 /* Resources */,
-				89F1746C6F29DD0F0829745A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,23 +173,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		89F1746C6F29DD0F0829745A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CFF5315E73A1DF3DEFEE8BF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF96204D28B4961500787DA0 /* DiaryViewController.swift in Sources */,
+				AF96205028B49DDB00787DA0 /* ArticleViewCell.swift in Sources */,
 				AF96203D28B3BB6600787DA0 /* AuthenticationViewController.swift in Sources */,
 				AF96203928B3BB6600787DA0 /* AppDelegate.swift in Sources */,
 				AF96203B28B3BB6600787DA0 /* SceneDelegate.swift in Sources */,
