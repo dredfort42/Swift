@@ -128,5 +128,22 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			Articles.manager.removeArticle(article: Articles.manager.getAllArticles().first!)
 		}
 	}
+
+	var backgroundTask: UIBackgroundTaskIdentifier = .invalid
+	func registerBackgroundTask() {
+	  backgroundTask = UIApplication.shared.beginBackgroundTask { [weak self] in
+		print("iOS has signaled time has expired")
+		self?.endBackgroundTaskIfActive()
+	  }
+	}
+
+	func endBackgroundTaskIfActive() {
+	  let isBackgroundTaskActive = backgroundTask != .invalid
+	  if isBackgroundTaskActive {
+		print("Background task ended.")
+		UIApplication.shared.endBackgroundTask(backgroundTask)
+		backgroundTask = .invalid
+	  }
+	}
 	
 }

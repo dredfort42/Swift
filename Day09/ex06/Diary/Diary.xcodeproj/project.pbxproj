@@ -93,13 +93,13 @@
 			children = (
 				AF96203C28B3BB6600787DA0 /* AuthenticationViewController.swift */,
 				AF96204C28B4961500787DA0 /* DiaryViewController.swift */,
-				AF96203E28B3BB6600787DA0 /* Main.storyboard */,
 				AF96204F28B49DDB00787DA0 /* ArticleViewCell.swift */,
+				AF96206328B4F77000787DA0 /* AddArticleViewController.swift */,
+				AF96203E28B3BB6600787DA0 /* Main.storyboard */,
 				AF96204628B3BB6900787DA0 /* Info.plist */,
 				AF96206B28B525C700787DA0 /* Localizable.strings */,
 				AF96206828B525C700787DA0 /* InfoPlist.strings */,
 				AF96204E28B4962100787DA0 /* Supporting files */,
-				AF96206328B4F77000787DA0 /* AddArticleViewController.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -408,6 +408,8 @@
 				DEVELOPMENT_TEAM = UJZ22F5K9V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -437,6 +439,8 @@
 				DEVELOPMENT_TEAM = UJZ22F5K9V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

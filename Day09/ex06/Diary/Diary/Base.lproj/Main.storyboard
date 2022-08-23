@@ -85,7 +85,7 @@
                                     <navigationItem title="Diary" id="dzK-hC-pgH">
                                         <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="1H4-jT-yMB">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="dzz-fL-IqJ"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToLogin" animates="NO" id="dzz-fL-IqJ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="elz-jY-EPU">
