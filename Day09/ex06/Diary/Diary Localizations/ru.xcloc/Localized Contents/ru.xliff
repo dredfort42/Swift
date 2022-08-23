@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Diary/Base.lproj/Main.storyboard" source-language="en" target-language="ru" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="1H4-jT-yMB.title" xml:space="preserve">
+        <source>Logout</source>
+        <target>Выйти</target>
+        <note>Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "1H4-jT-yMB";</note>
+      </trans-unit>
+      <trans-unit id="5Ic-jW-wJD.text" xml:space="preserve">
+        <source>Content</source>
+        <target>Контент</target>
+        <note>Class = "UILabel"; text = "Content"; ObjectID = "5Ic-jW-wJD";</note>
+      </trans-unit>
+      <trans-unit id="7jW-NJ-JNg.configuration.title" xml:space="preserve">
+        <source>Login</source>
+        <target>Войти</target>
+        <note>Class = "UIButton"; configuration.title = "Login"; ObjectID = "7jW-NJ-JNg";</note>
+      </trans-unit>
+      <trans-unit id="7jW-NJ-JNg.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Кнопки</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "7jW-NJ-JNg";</note>
+      </trans-unit>
+      <trans-unit id="Bp2-ta-z98.text" xml:space="preserve">
+        <source>Creation date</source>
+        <target>Дата создания</target>
+        <note>Class = "UILabel"; text = "Creation date"; ObjectID = "Bp2-ta-z98";</note>
+      </trans-unit>
+      <trans-unit id="NCX-jX-vmD.placeholder" xml:space="preserve">
+        <source>Enter the title of the article</source>
+        <target>Введите название статьи</target>
+        <note>Class = "UITextField"; placeholder = "Enter the title of the article"; ObjectID = "NCX-jX-vmD";</note>
+      </trans-unit>
+      <trans-unit id="PPw-02-thn.configuration.title" xml:space="preserve">
+        <source>Choose picture </source>
+        <target>Выберите изображение</target>
+        <note>Class = "UIButton"; configuration.title = "Choose picture "; ObjectID = "PPw-02-thn";</note>
+      </trans-unit>
+      <trans-unit id="PPw-02-thn.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Кнопка</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "PPw-02-thn";</note>
+      </trans-unit>
+      <trans-unit id="dzK-hC-pgH.title" xml:space="preserve">
+        <source>Diary</source>
+        <target>Дневник</target>
+        <note>Class = "UINavigationItem"; title = "Diary"; ObjectID = "dzK-hC-pgH";</note>
+      </trans-unit>
+      <trans-unit id="fKS-zR-oFB.text" xml:space="preserve">
+        <source>Enter your password</source>
+        <target>Введите пароль</target>
+        <note>Class = "UILabel"; text = "Enter your password"; ObjectID = "fKS-zR-oFB";</note>
+      </trans-unit>
+      <trans-unit id="pr3-zU-u7v.placeholder" xml:space="preserve">
+        <source>Password</source>
+        <target>Пароль</target>
+        <note>Class = "UITextField"; placeholder = "Password"; ObjectID = "pr3-zU-u7v";</note>
+      </trans-unit>
+      <trans-unit id="qAG-Op-pb7.title" xml:space="preserve">
+        <source>Article</source>
+        <target>Статья</target>
+        <note>Class = "UINavigationItem"; title = "Article"; ObjectID = "qAG-Op-pb7";</note>
+      </trans-unit>
+      <trans-unit id="vfh-l0-LGV.configuration.title" xml:space="preserve">
+        <source>Take picture</source>
+        <target>Сделать снимок</target>
+        <note>Class = "UIButton"; configuration.title = "Take picture"; ObjectID = "vfh-l0-LGV";</note>
+      </trans-unit>
+      <trans-unit id="vfh-l0-LGV.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Кнопка</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "vfh-l0-LGV";</note>
+      </trans-unit>
+      <trans-unit id="xVG-Ej-c6B.text" xml:space="preserve">
+        <source>Modification date</source>
+        <target>Дата изменения</target>
+        <note>Class = "UILabel"; text = "Modification date"; ObjectID = "xVG-Ej-c6B";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Diary/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Diary</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source/>
+        <target>Разрешить использование камеры</target>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription" xml:space="preserve">
+        <source/>
+        <target>Разрешить использование биометрической идентификации</target>
+        <note>Privacy - Face ID Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Diary/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="BIOMETRICS IDENTIFICATION ERROR" xml:space="preserve">
+        <source>BIOMETRICS IDENTIFICATION ERROR</source>
+        <target>ОШИБКА БИОМЕТРИЧЕСКОЙ ИДЕНТИФИКАЦИИ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="BIOMETRICS IDENTIFICATION NOT AVAILABLE" xml:space="preserve">
+        <source>BIOMETRICS IDENTIFICATION NOT AVAILABLE</source>
+        <target>БИОМЕТРИЧЕСКАЯ ИДЕНТИФИКАЦИЯ НЕ ДОСТУПНА</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Identify yourself!" xml:space="preserve">
+        <source>Identify yourself!</source>
+        <target>Пройдите идентификацию!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PASSWORD IDENTIFICATION ERROR" xml:space="preserve">
+        <source>PASSWORD IDENTIFICATION ERROR</source>
+        <target>ОШИБКА ИДЕНТИФИКАЦИИ ПО ПАРОЛЮ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="SUCCESS" xml:space="preserve">
+        <source>SUCCESS</source>
+        <target>УСПЕХ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wrong password, please try again" xml:space="preserve">
+        <source>Wrong password, please try again</source>
+        <target>Неверный пароль, попробуйте еще раз</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
