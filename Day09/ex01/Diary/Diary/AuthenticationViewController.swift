@@ -10,17 +10,28 @@ import LocalAuthentication
 
 class AuthenticationViewController: UIViewController {
 
-	let context = LAContext()
-	var error: NSError?
+	@IBOutlet weak var enterPasswordLabel: UILabel!
+	@IBOutlet weak var enterPasswordField: UITextField!
+	@IBOutlet weak var loginButtonView: UIButton!
+	@IBAction func loginButtonAction(_ sender: UIButton) {
+		checkPassword()
+	}
+
+	private let password = "dredfort"
+	private let context = LAContext()
+	private var error: NSError?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
+		enterPasswordLabel.isHidden = true
+		enterPasswordField.isHidden = true
+		loginButtonView.isHidden = true
 
 		autentication()
 	}
 
-	func autentication() {
+	private func autentication() {
 		if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
 			let reason = "Identify yourself!"
 
@@ -29,19 +40,34 @@ class AuthenticationViewController: UIViewController {
 
 				DispatchQueue.main.async {
 					if success {
-						self?.unlockSecretMessage()
+						self?.goToDiary()
 					} else {
-						self?.autentication()
-						print("IDENTIFICATION ERROR")
+						self?.enterPasswordLabel.isHidden = false
+						self?.enterPasswordField.isHidden = false
+						self?.loginButtonView.isHidden = false
+						print("BIOMETRICS IDENTIFICATION ERROR")
 					}
 				}
 			}
 		} else {
+			enterPasswordLabel.isHidden = false
+			enterPasswordField.isHidden = false
+			loginButtonView.isHidden = false
 			print("BIOMETRICS IDENTIFICATION NOT AVAILABLE")
 		}
 	}
 
-	func unlockSecretMessage() {
+	private func checkPassword() {
+		if password.isEqual(enterPasswordField.text) {
+			enterPasswordLabel.text = ""
+			goToDiary()
+		} else {
+			enterPasswordLabel.text = "Wrong password, please try again"
+			print("PASSWORD IDENTIFICATION ERROR")
+		}
+	}
+
+	private func goToDiary() {
 		print("SUCCESS")
 	}
 
