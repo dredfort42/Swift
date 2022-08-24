@@ -22,7 +22,13 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
 	}
 
 	var articles: [Article] = []
-	
+
+	override func viewWillAppear(_ animated: Bool) {
+		if !AuthenticationViewController.isLogin {
+			performSegue(withIdentifier: "backToLogin", sender: self)
+		}
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		

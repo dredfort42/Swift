@@ -55,6 +55,12 @@ class AddArticleViewController: UIViewController, UIImagePickerControllerDelegat
 
 	var article: Article?
 
+	override func viewWillAppear(_ animated: Bool) {
+		if !AuthenticationViewController.isLogin {
+			performSegue(withIdentifier: "backToLogin", sender: self)
+		}
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 

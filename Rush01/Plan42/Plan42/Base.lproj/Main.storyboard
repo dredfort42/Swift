@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plan View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlanViewController" customModule="Plan42" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHs-18-mii" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-Si-m4N">
+                                <rect key="frame" x="20" y="64" width="374" height="263"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-Oc-ui3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GUH-HD-vNs">
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="hRU-Yr-ON9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-aa-NaH">
+                                                <rect key="frame" x="274" y="0.0" width="100" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="8mK-xT-r57"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Mja-HH-2wT"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Show"/>
+                                                <connections>
+                                                    <action selector="showAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uX5-7R-fAJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-Uo-yer">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="215"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="215" id="Ted-cs-5Jd"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PredictCell" id="dJB-cq-fVL" customClass="PredictCell" customModule="Plan42" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJB-cq-fVL" id="RbT-Sg-1S7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQH-Qz-WWb">
+                                                            <rect key="frame" x="20" y="11" width="334" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="predictLabetView" destination="tQH-Qz-WWb" id="dwZ-Vc-Hbv"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-kL-DZI">
+                                <rect key="frame" x="20" y="822" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP0-QU-3Xq">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="2HO-LJ-MOg"/>
+                                            <constraint firstAttribute="height" constant="40" id="W3a-im-zGr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17l-Jk-gJP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-Eb-L4B">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="C5Q-h0-q52"/>
+                                            <constraint firstAttribute="height" constant="40" id="uS0-L1-fA1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="point.filled.topleft.down.curvedto.point.bottomright.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="routeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhB-VO-7Fc"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-El-dNp">
+                                        <rect key="frame" x="96" y="0.0" width="230" height="41"/>
+                                        <segments>
+                                            <segment title="Normal"/>
+                                            <segment title="Satellite"/>
+                                            <segment title="Terrain"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="mapViewSegmentationControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uds-V6-tII"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcy-ly-WzZ">
+                                        <rect key="frame" x="334" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="AJ9-il-eg8"/>
+                                            <constraint firstAttribute="width" constant="40" id="Mly-46-VTc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
+                                        <connections>
+                                            <action selector="trackingButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTf-EU-Hnc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jFV-kL-DZI" firstAttribute="top" secondItem="oHs-18-mii" secondAttribute="bottom" constant="8" symbolic="YES" id="2X3-d7-iil"/>
+                            <constraint firstItem="oHs-18-mii" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="77L-U3-Q6W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jFV-kL-DZI" secondAttribute="trailing" constant="20" id="9Zl-Pa-mor"/>
+                            <constraint firstItem="jFV-kL-DZI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BK2-O8-IkZ"/>
+                            <constraint firstItem="gmw-Si-m4N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="U6G-03-x1e"/>
+                            <constraint firstItem="oHs-18-mii" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XN9-Ez-QG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oHs-18-mii" secondAttribute="trailing" id="aJ1-rF-x3K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmw-Si-m4N" secondAttribute="trailing" constant="20" id="btn-IK-G6R"/>
+                            <constraint firstItem="gmw-Si-m4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i01-Rb-jmZ"/>
+                            <constraint firstItem="gmw-Si-m4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nE3-kH-sSX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmw-Si-m4N" secondAttribute="trailing" constant="20" id="q1E-he-XcI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jFV-kL-DZI" secondAttribute="bottom" id="rqR-kF-9mR"/>
+                            <constraint firstItem="gmw-Si-m4N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ueT-kL-Srf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressATextField" destination="GUH-HD-vNs" id="1XD-KN-2ho"/>
+                        <outlet property="mapView" destination="oHs-18-mii" id="ZqL-61-emc"/>
+                        <outlet property="predictionsTableView" destination="UXP-Uo-yer" id="rUQ-Eh-mxA"/>
+                        <outlet property="routeButtonView" destination="GLa-Eb-L4B" id="sKa-l6-CrI"/>
+                        <outlet property="routeStackView" destination="gmw-Si-m4N" id="cZQ-aA-SCG"/>
+                        <outlet property="searchButtonView" destination="XP0-QU-3Xq" id="zG0-pP-sGc"/>
+                        <outlet property="trackingButtonView" destination="Hcy-ly-WzZ" id="w5Z-vG-n4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" catalog="system" width="128" height="118"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="point.filled.topleft.down.curvedto.point.bottomright.up" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

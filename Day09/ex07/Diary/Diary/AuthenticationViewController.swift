@@ -10,6 +10,12 @@ import LocalAuthentication
 
 class AuthenticationViewController: UIViewController {
 
+	static var isLogin: Bool = false {
+		didSet {
+			print(isLogin)
+		}
+	}
+
 	@IBOutlet weak var enterPasswordLabel: UILabel!
 	@IBOutlet weak var enterPasswordField: UITextField!
 	@IBOutlet weak var loginButtonView: UIButton!
@@ -40,6 +46,7 @@ class AuthenticationViewController: UIViewController {
 
 				DispatchQueue.main.async {
 					if success {
+						AuthenticationViewController.isLogin = true
 						self?.goToDiary()
 					} else {
 						self?.enterPasswordLabel.isHidden = false
