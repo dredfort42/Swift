@@ -20,6 +20,19 @@ extension PlanViewController: UITextFieldDelegate {
 		return true
 	}
 
+	func textFieldDidEndEditing(_ textField: UITextField) {
+		predictionsTableView.reloadData()
+	}
+
+	func textFieldDidChangeSelection(_ textField: UITextField) {
+		predictionsTableView.reloadData()
+	}
+
+	func textFieldShouldClear(_ textField: UITextField) -> Bool {
+		addressA = nil
+		return true
+	}
+
 	func textField(
 		_ textField: UITextField,
 		shouldChangeCharactersIn range: NSRange,

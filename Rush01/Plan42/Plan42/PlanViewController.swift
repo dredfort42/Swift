@@ -27,7 +27,23 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 	}
 
 	var addressA: GMSPlace?
-	var addressB: GMSPlace?
+	{
+		didSet {
+			if addressA != nil {
+				actionButtonsStackView.isHidden = false
+			} else {
+//				actionButtonsStackView.isHidden = true
+			}
+		}
+	}
+	var addressB: GMSPlace? {
+		didSet {
+			if addressB == nil {
+				actionButtonsStackView.isHidden = true
+				routeToTextField.isHidden = true
+			}
+		}
+	}
 
 
 	@IBOutlet weak var mapView: GMSMapView!
@@ -53,9 +69,9 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		updateTrackingButtonViev()
 	}
 
-	@IBOutlet weak var routeButtonView: UIButton!
-	@IBAction func routeButtonAction(_ sender: UIButton) {
-	}
+//	@IBOutlet weak var routeButtonView: UIButton!
+//	@IBAction func routeButtonAction(_ sender: UIButton) {
+//	}
 
 	@IBOutlet weak var searchButtonView: UIButton!
 	@IBAction func searchButtonAction(_ sender: UIButton) {
@@ -84,6 +100,7 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		}
 	}
 
+	@IBOutlet weak var showAddressButtonView: UIButton!
 	@IBAction func showAddressButtonAction(_ sender: UIButton) {
 		if addressA != nil && addressB == nil {
 			getMarker(
@@ -97,6 +114,24 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		routeStackView.isHidden = true
 		trackingButtonAction(UIButton())
 		updateSearchButtonViev()
+	}
+
+	@IBOutlet weak var actionButtonsStackView: UIStackView!
+	@IBAction func addAddressButtonAction(_ sender: UIButton) {
+		routeToTextField.text = addressATextField.text
+		addressATextField.text = ""
+		routeToTextField.isHidden = false
+		addressB = addressA
+		addressA = nil
+
+	}
+
+	@IBOutlet weak var routeToTextField: UITextField! {
+		didSet {
+			routeToTextField.layer.borderColor = UIColor.red.cgColor
+			routeToTextField.layer.borderWidth = 2
+			routeToTextField.layer.cornerRadius = 6
+		}
 	}
 
 	override func viewDidLoad() {
@@ -125,11 +160,13 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		mapView.settings.allowScrollGesturesDuringRotateOrZoom = true
 		mapView.mapType = .normal
 
+		actionButtonsStackView.isHidden = true
+		routeToTextField.isHidden = true
 		routeStackView.isHidden = true
 		predictionsTableView.isHidden = true
 
 		updateTrackingButtonViev()
-		updateRouteButtonView()
+//		updateRouteButtonView()
 		updateSearchButtonViev()
 	}
 
@@ -152,10 +189,10 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		}
 	}
 
-	func updateRouteButtonView() {
-		routeButtonView.isHidden = true
-		routeButtonView.tintColor = .systemGray
-	}
+//	func updateRouteButtonView() {
+//		routeButtonView.isHidden = true
+//		routeButtonView.tintColor = .systemGray
+//	}
 
 	func updateSearchButtonViev() {
 		if routeStackView.isHidden {

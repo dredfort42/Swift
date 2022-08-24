@@ -27,13 +27,13 @@ extension PlanViewController: UITableViewDelegate, UITableViewDataSource {
 		self.placesClient.lookUpPlaceID(
 			self.autocompletePredictions[indexPath.row].placeID,
 			callback: { (place, error) in
-				if self.addressA == nil {
-					self.addressATextField.text = self.autocompletePredictions[indexPath.row].attributedPrimaryText.string
+
+					self.addressATextField.text = self.autocompletePredictions[indexPath.row].attributedFullText.string
 					self.addressA = place
-				} else {
+
 					//				self.addressBTextField.text = self.autocompletePredictions[indexPath.row].attributedPrimaryText.string
 					//				self.addressB = place
-				}
+//				}
 
 			}
 		)

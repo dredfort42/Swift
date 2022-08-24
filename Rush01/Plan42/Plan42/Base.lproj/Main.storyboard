@@ -22,31 +22,19 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-Si-m4N">
-                                <rect key="frame" x="20" y="64" width="374" height="263"/>
+                                <rect key="frame" x="20" y="64" width="374" height="359"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-Oc-ui3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GUH-HD-vNs">
-                                                <rect key="frame" x="0.0" y="0.0" width="266" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hRU-Yr-ON9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-aa-NaH">
-                                                <rect key="frame" x="274" y="0.0" width="100" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="8mK-xT-r57"/>
-                                                    <constraint firstAttribute="height" constant="40" id="Mja-HH-2wT"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Show"/>
-                                                <connections>
-                                                    <action selector="showAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uX5-7R-fAJ"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-Uo-yer">
@@ -79,7 +67,47 @@
                                         </prototypes>
                                         <sections/>
                                     </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gzz-ai-lAx">
+                                        <rect key="frame" x="0.0" y="271" width="374" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-aa-NaH">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Mja-HH-2wT"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="plus" catalog="system" title="Add address"/>
+                                                <connections>
+                                                    <action selector="addAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrH-xs-G8W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Md-PY-Qh4">
+                                                <rect key="frame" x="195" y="0.0" width="179" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QZn-NN-hXr"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="location.north" catalog="system" title="Show"/>
+                                                <connections>
+                                                    <action selector="showAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giw-2y-KjS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psr-AG-kOU">
+                                        <rect key="frame" x="0.0" y="319" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nhJ-tu-eSA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="psr-AG-kOU" firstAttribute="top" secondItem="Gzz-ai-lAx" secondAttribute="bottom" constant="8" symbolic="YES" id="KMs-nx-S1z"/>
+                                    <constraint firstItem="psr-AG-kOU" firstAttribute="leading" secondItem="gmw-Si-m4N" secondAttribute="leading" id="O7K-NP-lGD"/>
+                                    <constraint firstAttribute="trailing" secondItem="psr-AG-kOU" secondAttribute="trailing" id="hab-Vo-P1g"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-kL-DZI">
                                 <rect key="frame" x="20" y="822" width="374" height="40"/>
@@ -96,20 +124,8 @@
                                             <action selector="searchButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17l-Jk-gJP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-Eb-L4B">
-                                        <rect key="frame" x="48" y="0.0" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="C5Q-h0-q52"/>
-                                            <constraint firstAttribute="height" constant="40" id="uS0-L1-fA1"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="point.filled.topleft.down.curvedto.point.bottomright.up" catalog="system"/>
-                                        <connections>
-                                            <action selector="routeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhB-VO-7Fc"/>
-                                        </connections>
-                                    </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-El-dNp">
-                                        <rect key="frame" x="96" y="0.0" width="230" height="41"/>
+                                        <rect key="frame" x="48" y="0.0" width="278" height="41"/>
                                         <segments>
                                             <segment title="Normal"/>
                                             <segment title="Satellite"/>
@@ -153,12 +169,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actionButtonsStackView" destination="Gzz-ai-lAx" id="sOx-Zr-xK6"/>
                         <outlet property="addressATextField" destination="GUH-HD-vNs" id="1XD-KN-2ho"/>
                         <outlet property="mapView" destination="oHs-18-mii" id="ZqL-61-emc"/>
                         <outlet property="predictionsTableView" destination="UXP-Uo-yer" id="rUQ-Eh-mxA"/>
-                        <outlet property="routeButtonView" destination="GLa-Eb-L4B" id="sKa-l6-CrI"/>
                         <outlet property="routeStackView" destination="gmw-Si-m4N" id="cZQ-aA-SCG"/>
+                        <outlet property="routeToTextField" destination="psr-AG-kOU" id="JZW-0S-WYD"/>
                         <outlet property="searchButtonView" destination="XP0-QU-3Xq" id="zG0-pP-sGc"/>
+                        <outlet property="showAddressButtonView" destination="8Md-PY-Qh4" id="H1h-D7-CyE"/>
                         <outlet property="trackingButtonView" destination="Hcy-ly-WzZ" id="w5Z-vG-n4C"/>
                     </connections>
                 </viewController>
@@ -169,8 +187,9 @@
     </scenes>
     <resources>
         <image name="location" catalog="system" width="128" height="118"/>
+        <image name="location.north" catalog="system" width="108" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="point.filled.topleft.down.curvedto.point.bottomright.up" catalog="system" width="121" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
