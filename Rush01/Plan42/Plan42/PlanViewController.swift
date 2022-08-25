@@ -11,40 +11,24 @@ import GooglePlaces
 
 class PlanViewController: UIViewController, CLLocationManagerDelegate {
 	let locationManager = CLLocationManager()
-	let placesClient = GMSPlacesClient()
-
 	var trackingIsOn: Bool = true
-
-	let autocompleteSessionToken = GMSAutocompleteSessionToken.init()
+	let placesClient = GMSPlacesClient()
 	var autocompletePredictions: [GMSAutocompletePrediction] = [] {
 		didSet {
-			if autocompletePredictions.count > 0 {
-				predictionsTableView.isHidden = false
-			} else {
-				predictionsTableView.isHidden = true
-			}
+			updatePredicationTableView()
 		}
 	}
-
-	var addressA: GMSPlace?
-	{
+	
+	var addressA: GMSPlace? {
 		didSet {
-			if addressA != nil {
-				actionButtonsStackView.isHidden = false
-			} else {
-//				actionButtonsStackView.isHidden = true
-			}
+			updateAdressView()
 		}
 	}
 	var addressB: GMSPlace? {
 		didSet {
-			if addressB == nil {
-				actionButtonsStackView.isHidden = true
-				routeToTextField.isHidden = true
-			}
+			updateAdressView()
 		}
 	}
-
 
 	@IBOutlet weak var mapView: GMSMapView!
 	@IBAction func mapViewSegmentationControlAction(_ sender: UISegmentedControl) {
@@ -69,10 +53,6 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		updateTrackingButtonViev()
 	}
 
-//	@IBOutlet weak var routeButtonView: UIButton!
-//	@IBAction func routeButtonAction(_ sender: UIButton) {
-//	}
-
 	@IBOutlet weak var searchButtonView: UIButton!
 	@IBAction func searchButtonAction(_ sender: UIButton) {
 		if routeStackView.isHidden {
@@ -87,52 +67,32 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 	@IBOutlet weak var addressATextField: UITextField! {
 		didSet {
 			addressATextField.delegate = self
+			addressATextField.layer.borderWidth = 2
+			addressATextField.layer.cornerRadius = 6
 			addressATextField.layer.borderColor = UIColor.systemGray5.cgColor
 		}
 	}
-	@IBOutlet weak var predictionsTableView: UITableView! {
-		didSet {
-			predictionsTableView.delegate = self
-			predictionsTableView.dataSource = self
-			predictionsTableView.layer.cornerRadius = 6
-			predictionsTableView.layer.borderWidth = 1
-			predictionsTableView.layer.borderColor = UIColor.systemGray5.cgColor
-		}
-	}
-
+	@IBOutlet weak var predictionsTableView: UITableView!
 	@IBOutlet weak var showAddressButtonView: UIButton!
 	@IBAction func showAddressButtonAction(_ sender: UIButton) {
-		if addressA != nil && addressB == nil {
-			getMarker(
-				titleMarker: (addressA?.formattedAddress)!,
-				latitude: (addressA?.coordinate.latitude)!,
-				longitude: (addressA?.coordinate.longitude)!
-			)
-			mapView.camera = GMSCameraPosition(latitude:  (addressA?.coordinate.latitude)!, longitude: (addressA?.coordinate.longitude)!, zoom: 15)
-		}
-		addressATextField.endEditing(true)
-		routeStackView.isHidden = true
-		trackingButtonAction(UIButton())
-		updateSearchButtonViev()
+		showAddress()
 	}
 
 	@IBOutlet weak var actionButtonsStackView: UIStackView!
+	@IBOutlet weak var addAddressButtonView: UIButton!
 	@IBAction func addAddressButtonAction(_ sender: UIButton) {
-		routeToTextField.text = addressATextField.text
-		addressATextField.text = ""
-		routeToTextField.isHidden = false
-		addressB = addressA
-		addressA = nil
-
-	}
-
-	@IBOutlet weak var routeToTextField: UITextField! {
-		didSet {
-			routeToTextField.layer.borderColor = UIColor.red.cgColor
-			routeToTextField.layer.borderWidth = 2
-			routeToTextField.layer.cornerRadius = 6
+		if addressA != nil && addressB != nil {
+			routeToTextField.text = ""
+			addressB = nil
+		} else {
+			routeToTextField.text = addressATextField.text
+			addressB = addressA
 		}
+		addressATextField.text = ""
+		addressA = nil
 	}
+
+	@IBOutlet weak var routeToTextField: UITextField!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -166,8 +126,8 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		predictionsTableView.isHidden = true
 
 		updateTrackingButtonViev()
-//		updateRouteButtonView()
 		updateSearchButtonViev()
+		updateAdressView()
 	}
 
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -181,6 +141,76 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		)
 	}
 
+	func getMarker(titleMarker: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+		let marker = GMSMarker()
+		marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+		marker.title = titleMarker
+		marker.map = mapView
+	}
+
+	func showAddress() {
+		mapView.clear()
+		addressATextField.endEditing(true)
+		routeStackView.isHidden = true
+		if trackingIsOn {
+			trackingButtonAction(UIButton())
+		}
+		updateSearchButtonViev()
+		if addressA != nil && addressB != nil {
+			getPath(addressA: addressA!, addressB: addressB!)
+		} else if (addressA != nil && addressB == nil) || (addressA == nil && addressB != nil) {
+			let address = addressA != nil ? addressA : addressB
+			getMarker(
+				titleMarker: (address?.formattedAddress)!,
+				latitude: (address?.coordinate.latitude)!,
+				longitude: (address?.coordinate.longitude)!
+			)
+			mapView.camera = GMSCameraPosition(latitude:  (address?.coordinate.latitude)!, longitude: (address?.coordinate.longitude)!, zoom: 15)
+		}
+	}
+
+	func updatePredicationTableView() {
+		predictionsTableView.delegate = self
+		predictionsTableView.dataSource = self
+		predictionsTableView.reloadData()
+		predictionsTableView.layer.cornerRadius = 6
+		predictionsTableView.layer.borderWidth = 1
+		predictionsTableView.layer.borderColor = UIColor.systemGray5.cgColor
+		if autocompletePredictions.count > 0 && addressA == nil {
+			predictionsTableView.isHidden = false
+		} else {
+			predictionsTableView.isHidden = true
+		}
+	}
+
+	func updateAdressView() {
+		if addressB == nil {
+			showAddressButtonView.setTitle("Show", for: .normal)
+			addAddressButtonView.setTitle("Add address", for: .normal)
+			if addressA != nil {
+				actionButtonsStackView.isHidden = false
+			} else {
+				actionButtonsStackView.isHidden = true
+			}
+			routeToTextField.isHidden = true
+			addressATextField.layer.borderColor = UIColor.systemGray5.cgColor
+		} else {
+			if addressA != nil {
+				showAddressButtonView.setTitle("Route", for: .normal)
+				addAddressButtonView.setTitle("Clear", for: .normal)
+			} else {
+				showAddressButtonView.setTitle("Show", for: .normal)
+				addAddressButtonView.setTitle("Add address", for: .normal)
+			}
+			actionButtonsStackView.isHidden = false
+			routeToTextField.isHidden = false
+			routeToTextField.layer.borderWidth = 2
+			routeToTextField.layer.cornerRadius = 6
+			routeToTextField.layer.borderColor = UIColor.systemRed.cgColor
+			addressATextField.layer.borderColor = UIColor.systemGreen.cgColor
+		}
+	}
+
 	func updateTrackingButtonViev() {
 		if trackingIsOn {
 			trackingButtonView.tintColor = .systemBlue
@@ -189,24 +219,12 @@ class PlanViewController: UIViewController, CLLocationManagerDelegate {
 		}
 	}
 
-//	func updateRouteButtonView() {
-//		routeButtonView.isHidden = true
-//		routeButtonView.tintColor = .systemGray
-//	}
-
 	func updateSearchButtonViev() {
 		if routeStackView.isHidden {
 			searchButtonView.tintColor = . systemGray
 		} else {
 			searchButtonView.tintColor = .systemBlue
 		}
-	}
-
-	func getMarker(titleMarker: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-		let marker = GMSMarker()
-		marker.position = CLLocationCoordinate2DMake(latitude, longitude)
-		marker.title = titleMarker
-		marker.map = mapView
 	}
 
 }

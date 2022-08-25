@@ -24,11 +24,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-Si-m4N">
                                 <rect key="frame" x="20" y="64" width="374" height="359"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-Oc-ui3">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-Oc-ui3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="88"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GUH-HD-vNs">
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psr-AG-kOU">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="nhJ-tu-eSA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GUH-HD-vNs">
+                                                <rect key="frame" x="0.0" y="48" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hRU-Yr-ON9"/>
                                                 </constraints>
@@ -38,7 +46,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-Uo-yer">
-                                        <rect key="frame" x="0.0" y="48" width="374" height="215"/>
+                                        <rect key="frame" x="0.0" y="96" width="374" height="215"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="215" id="Ted-cs-5Jd"/>
@@ -67,47 +75,36 @@
                                         </prototypes>
                                         <sections/>
                                     </tableView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gzz-ai-lAx">
-                                        <rect key="frame" x="0.0" y="271" width="374" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gzz-ai-lAx">
+                                        <rect key="frame" x="0.0" y="319" width="374" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-aa-NaH">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-aa-NaH">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Mja-HH-2wT"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" image="plus" catalog="system" title="Add address"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add address"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Add address"/>
                                                 <connections>
                                                     <action selector="addAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrH-xs-G8W"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Md-PY-Qh4">
-                                                <rect key="frame" x="195" y="0.0" width="179" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Md-PY-Qh4">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="QZn-NN-hXr"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" image="location.north" catalog="system" title="Show"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Show"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Show"/>
                                                 <connections>
                                                     <action selector="showAddressButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giw-2y-KjS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psr-AG-kOU">
-                                        <rect key="frame" x="0.0" y="319" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="nhJ-tu-eSA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="psr-AG-kOU" firstAttribute="top" secondItem="Gzz-ai-lAx" secondAttribute="bottom" constant="8" symbolic="YES" id="KMs-nx-S1z"/>
-                                    <constraint firstItem="psr-AG-kOU" firstAttribute="leading" secondItem="gmw-Si-m4N" secondAttribute="leading" id="O7K-NP-lGD"/>
-                                    <constraint firstAttribute="trailing" secondItem="psr-AG-kOU" secondAttribute="trailing" id="hab-Vo-P1g"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-kL-DZI">
                                 <rect key="frame" x="20" y="822" width="374" height="40"/>
@@ -170,6 +167,7 @@
                     </view>
                     <connections>
                         <outlet property="actionButtonsStackView" destination="Gzz-ai-lAx" id="sOx-Zr-xK6"/>
+                        <outlet property="addAddressButtonView" destination="7zc-aa-NaH" id="ckl-vu-0J7"/>
                         <outlet property="addressATextField" destination="GUH-HD-vNs" id="1XD-KN-2ho"/>
                         <outlet property="mapView" destination="oHs-18-mii" id="ZqL-61-emc"/>
                         <outlet property="predictionsTableView" destination="UXP-Uo-yer" id="rUQ-Eh-mxA"/>
@@ -187,9 +185,7 @@
     </scenes>
     <resources>
         <image name="location" catalog="system" width="128" height="118"/>
-        <image name="location.north" catalog="system" width="108" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

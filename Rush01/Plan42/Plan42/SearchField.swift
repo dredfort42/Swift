@@ -6,26 +6,18 @@
 //
 
 import UIKit
+import GooglePlaces
 
 extension PlanViewController: UITextFieldDelegate {
 
 	func textFieldDidBeginEditing(_ textField: UITextField) {
 		autocompletePredictions = []
-		predictionsTableView.reloadData()
 	}
 
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
 		showAddressButtonAction(UIButton())
 		return true
-	}
-
-	func textFieldDidEndEditing(_ textField: UITextField) {
-		predictionsTableView.reloadData()
-	}
-
-	func textFieldDidChangeSelection(_ textField: UITextField) {
-		predictionsTableView.reloadData()
 	}
 
 	func textFieldShouldClear(_ textField: UITextField) -> Bool {
@@ -41,11 +33,10 @@ extension PlanViewController: UITextFieldDelegate {
 		placesClient.findAutocompletePredictions(
 			fromQuery: textField.text!,
 			filter: nil,
-			sessionToken: autocompleteSessionToken
+			sessionToken: GMSAutocompleteSessionToken.init()
 		) { (predications, erroe) in
 			self.autocompletePredictions = predications ?? []
 		}
-		predictionsTableView.reloadData()
 		return true
 	}
 

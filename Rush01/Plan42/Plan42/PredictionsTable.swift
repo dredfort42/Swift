@@ -27,19 +27,13 @@ extension PlanViewController: UITableViewDelegate, UITableViewDataSource {
 		self.placesClient.lookUpPlaceID(
 			self.autocompletePredictions[indexPath.row].placeID,
 			callback: { (place, error) in
-
-					self.addressATextField.text = self.autocompletePredictions[indexPath.row].attributedFullText.string
-					self.addressA = place
-
-					//				self.addressBTextField.text = self.autocompletePredictions[indexPath.row].attributedPrimaryText.string
-					//				self.addressB = place
-//				}
-
+				self.addressATextField.text = self.autocompletePredictions[indexPath.row].attributedFullText.string
+				self.addressA = place
+				self.predictionsTableView.isHidden = true
 			}
 		)
 		tableView.deselectRow(at: indexPath, animated: false)
-		predictionsTableView.isHidden = true
+		addressATextField.endEditing(true)
 	}
+	
 }
-
-

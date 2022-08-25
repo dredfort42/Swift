@@ -10,6 +10,7 @@
 		29B86E8D465D058675996D18 /* Pods_Plan42.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A450C01A8F3D2D51F3EF4B /* Pods_Plan42.framework */; };
 		AF0BB08528B6569D005D0309 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BB08428B6569D005D0309 /* SearchField.swift */; };
 		AF0BB08728B66B78005D0309 /* PredictionsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BB08628B66B78005D0309 /* PredictionsTable.swift */; };
+		AF0BB08928B746BB005D0309 /* PathOnMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BB08828B746BB005D0309 /* PathOnMap.swift */; };
 		AFB2776E28B5DA85008E4544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2776D28B5DA85008E4544 /* AppDelegate.swift */; };
 		AFB2777028B5DA85008E4544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2776F28B5DA85008E4544 /* SceneDelegate.swift */; };
 		AFB2777228B5DA85008E4544 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB2777128B5DA85008E4544 /* PlanViewController.swift */; };
@@ -23,6 +24,7 @@
 		51A450C01A8F3D2D51F3EF4B /* Pods_Plan42.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plan42.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0BB08428B6569D005D0309 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		AF0BB08628B66B78005D0309 /* PredictionsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsTable.swift; sourceTree = "<group>"; };
+		AF0BB08828B746BB005D0309 /* PathOnMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathOnMap.swift; sourceTree = "<group>"; };
 		AFB2776A28B5DA85008E4544 /* Plan42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plan42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB2776D28B5DA85008E4544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB2776F28B5DA85008E4544 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				AFB2777128B5DA85008E4544 /* PlanViewController.swift */,
 				AF0BB08428B6569D005D0309 /* SearchField.swift */,
 				AF0BB08628B66B78005D0309 /* PredictionsTable.swift */,
+				AF0BB08828B746BB005D0309 /* PathOnMap.swift */,
 				AFB2777328B5DA85008E4544 /* Main.storyboard */,
 				AFB2777B28B5DA89008E4544 /* Info.plist */,
 				AFB2778128B5E35E008E4544 /* Supporting files */,
@@ -222,6 +225,7 @@
 			files = (
 				AFB2777228B5DA85008E4544 /* PlanViewController.swift in Sources */,
 				AFB2776E28B5DA85008E4544 /* AppDelegate.swift in Sources */,
+				AF0BB08928B746BB005D0309 /* PathOnMap.swift in Sources */,
 				AF0BB08528B6569D005D0309 /* SearchField.swift in Sources */,
 				AF0BB08728B66B78005D0309 /* PredictionsTable.swift in Sources */,
 				AFB2777028B5DA85008E4544 /* SceneDelegate.swift in Sources */,
